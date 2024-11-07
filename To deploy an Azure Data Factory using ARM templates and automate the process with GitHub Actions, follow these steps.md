@@ -8,6 +8,14 @@ Download the template, and you’ll have files such as arm_template.json and arm
 2. Set Up the ARM Template Repository
 Create a Repository in GitHub and upload your arm_template.json and arm_template_parameters.json files.
 Organize your files in the repository:
+
+/azure-data-factory-deployment
+├── arm_template.json
+├── arm_template_parameters.json
+└── .github
+    └── workflows
+        └── deploy-adf.yml
+
 plaintext
 Copy code
 /azure-data-factory-deployment
@@ -16,7 +24,7 @@ Copy code
 └── .github
     └── workflows
         └── deploy-adf.yml
-3. Configure GitHub Actions Workflow
+4. Configure GitHub Actions Workflow
 To deploy the ARM template to Azure Data Factory, create a GitHub Actions workflow file. This workflow will:
 
 Use Azure login to authenticate.
